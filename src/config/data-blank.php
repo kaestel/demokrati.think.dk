@@ -1,9 +1,12 @@
 <?php
 
+global $slug_upload_receipt;
 global $slug_data_intro;
 global $slug_data_address;
 global $slug_data_receipt;
 global $slug_data_footer;
+global $slug_email;
+
 
 $slug_email = "martin@kaestel.dk";
 
