@@ -1,0 +1,26 @@
+#footer {background:#ffffff; width: 737px; padding: 40px 20px 20px; margin: 0 auto; border-top: 1px solid #e8e8e8;}
+#footer .about {width:740px; margin:0 auto; position: relative;	padding-bottom: 20px;}
+
+#footer .about p {color: #ffffff; font-size: 26px; 
+	font-family: 'OpenSans', Arial, sans-serif; font-weight: bold; font-style:italic;
+}
+#footer .about ul.contacts {display:block; width:100%; font-size: 1rem; }
+#footer .about ul.contacts li.contact {width:200px;}
+#footer .about ul.contacts li.contact * {color: #000000;}
+#footer .about ul.contacts li.contact .press {}
+#footer .about ul.contacts li.contact h4 {padding-bottom: 10px; font-size: 12px;}
+#footer .about ul.contacts li.contact h5 {padding-bottom: 24px; font-size:20px; text-transform: uppercase; 
+	font-family: 'OpenSans', Arial, sans-serif;
+	font-weight: 800;
+	letter-spacing: 1px;
+}
+#footer .about ul.contacts li.contact p {font-weight: normal; font-style:normal; padding-bottom: 4px; font-size: 14px; line-height: 1em; 
+	font-family: 'OpenSans', Arial, sans-serif;
+}
+#footer .about ul.contacts li.contact p a {font-weight: bold;}
+#footer .about ul.contacts li.contact p a:hover {color: #00ff00;}
+
+
+body.blank #footer .about {
+	background: url("/img/blank/logo.png") no-repeat; background-position: 600px 0px;
+}
