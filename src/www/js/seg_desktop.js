@@ -3535,6 +3535,14 @@ Util.Objects["preview"] = new function() {
 		scene.ready = function() {
 			this._signatureform = u.qs("div.signatureform", this);
 			this._form = u.qs("form", this);
+			this._form.div = this;
+			u.f.init(this._form);
+			this._form.actions["save"].clicked = function() {
+				u.ac(this, "wait");
+				this.value = "Vent";
+				u.as(this.form.div.bn_back, "opacity", 0);
+				this.form.submit();
+			}
 			this._approved_input = u.qs("#approved")
 			this.div_signature = u.ae(this._signatureform, "div", {"class":"signature"});
 			this.canvas_signature = u.ae(this.div_signature, "canvas", {"class":"signature"});
@@ -3603,6 +3611,26 @@ Util.Objects["preview"] = new function() {
 				this.scene._approved_input.value = 0;
 				this.scene._form.action = "/vaelgererklaering/signature";
 				this.scene._form.submit();
+			}
+		}
+		scene.ready();
+	}
+}
+Util.Objects["upload"] = new function() {
+	this.init = function(scene) {
+		scene.ready = function() {
+			this._form = u.qs("form", this);
+			this._form.div = this;
+			u.f.init(this._form);
+			this._form.p = u.ae(this._form.fields["declaration"].field, "p", {"html":"Træk din vælgererklæring her,<br />eller klik for at vælge den fra din computer"});
+			this._form.fields["declaration"].changed = function() {
+				u.f.validate(this);
+				this.form.p.innerHTML = this.files[0].name;
+			}
+			this._form.submitted = function() {
+					u.ac(this.actions["send"], "wait");
+					this.actions["send"].value = "Vent";
+					this.submit();
 			}
 		}
 		scene.ready();
