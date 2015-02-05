@@ -53,5 +53,11 @@ $slug_data_footer .= '	</ul>';
 $slug_data_footer .= '</div>';
 
 
+$slug_upload_receipt = '';
+$slug_upload_receipt .= '<h1>Tusind tak</h1>';
+$slug_upload_receipt .= '<p>Vi har nu modtaget din godkendte vælgererklæring.</p>';
+$slug_upload_receipt .= '<p class="regards">Med venlig hilsen,</p>';
+$slug_upload_receipt .= '<h2><a href="http://demokrati.think.dk">BLANK</a></h2>';
+
 
 ?>

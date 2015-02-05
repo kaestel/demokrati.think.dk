@@ -20,6 +20,7 @@
 #footer .about ul.contacts li.contact p a {font-weight: bold;}
 #footer .about ul.contacts li.contact p a:hover {color: #00ff00;}
 
+#footer > p {font-size: 14px; line-height: 1em;}
 
 body.blank #footer .about {
 	background: url("/img/blank/logo.png") no-repeat; background-position: 600px 0px;

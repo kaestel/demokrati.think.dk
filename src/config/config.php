@@ -43,5 +43,6 @@ $slug_data_intro = '';
 $slug_data_address = '';
 $slug_data_receipt = '';
 $slug_data_footer = '<div class="about">demokrati.think.dk</div>';
+$slug_upload_receipt = '';
 
 ?>

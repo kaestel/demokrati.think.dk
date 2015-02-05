@@ -11,8 +11,8 @@ $action = $page->actions();
 
 $slug = session()->value("slug");
 
-$page->bodyClass("declaration2".$slug);
-$page->pageTitle("Vælgererklæring22");
+$page->bodyClass("declaration ".$slug);
+$page->pageTitle("Vælgererklæring");
 
 
 
