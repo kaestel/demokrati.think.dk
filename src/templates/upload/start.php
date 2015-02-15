@@ -1,6 +1,6 @@
 <div class="scene upload i:upload">
 
-	<h1>Upload<br />Vælgererklæring</h1>
+	<h1>Upload vælgererklæring</h1>
 
 	<p>
 		Når du får din vælgererklæring tilbage fra kommunen, kan du scanne eller tage et billede af den <strong>på langs</strong>, 

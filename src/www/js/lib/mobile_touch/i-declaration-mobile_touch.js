@@ -475,7 +475,17 @@ Util.Objects["preview"] = new function() {
 			this._signatureform = u.qs("div.signatureform", this);
 
 			this._form = u.qs("form", this);
+			this._form.div = this;
 			this._approved_input = u.qs("#approved")
+
+
+			u.f.init(this._form);
+			this._form.actions["save"].clicked = function() {
+				u.ac(this, "wait");
+				this.value = "Vent";
+				u.as(this.form.div.bn_back, "opacity", 0);
+				this.form.submit();
+			}
 
 
 			// add preview div
@@ -598,5 +608,35 @@ Util.Objects["preview"] = new function() {
 
 
 		scene.ready();
+	}
+}
+
+Util.Objects["upload"] = new function() {
+	this.init = function(scene) {
+
+		scene.ready = function() {
+
+			this._form = u.qs("form", this);
+			this._form.div = this;
+			u.f.init(this._form);
+
+			this._form.p = u.ae(this._form.fields["declaration"].field, "p", {"html":"Klik her for at vælge filen"});
+			this._form.fields["declaration"].changed = function() {
+				u.f.validate(this);
+				this.form.p.innerHTML = this.files[0].name;
+			}
+
+			this._form.submitted = function() {
+//				if(!u.qsa(".field.error", this)) {
+					u.ac(this.actions["send"], "wait");
+					this.actions["send"].value = "Vent";
+					this.submit();
+//				}
+			}
+
+		}
+
+		scene.ready();
+
 	}
 }

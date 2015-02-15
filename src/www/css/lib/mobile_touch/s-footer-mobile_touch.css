@@ -1,4 +1,4 @@
-#footer { background:#ffffff; padding: 40px 20px 20px; margin: 20px auto;}
+#footer { background:#ffffff; padding: 40px 20px 20px; margin: 20px auto; border-top: 1px solid #999999;}
 #footer .social {display: none;}
 
 #footer .about {margin:0 auto; position: relative;	padding-bottom: 20px;

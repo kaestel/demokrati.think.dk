@@ -32,7 +32,7 @@ $slug_data_receipt = '';
 $slug_data_receipt .= '<h1>Tusind tak</h1>';
 $slug_data_receipt .= '<p>Vi har nu modtaget din underskrevne vælgererklæring.</p>';
 
-$slug_data_receipt .= '<h3>Upload din godkendte vælgererklæring til os</h3>';
+$slug_data_receipt .= '<h3>Returnér din godkendte vælgererklæring til os</h3>';
 $slug_data_receipt .= '<p>Indenfor nogle uger får du din godkendte vælgererklæring tilbage med posten fra Folkeregistret i din kommune. Først når vi modtager den fra dig, tæller den med blandt de 20.260 vælgererklæringer, som vi skal bruge for at kunne stille op til næste folketingsvalg.</p>';
 $slug_data_receipt .= '<p>Husk at <a href="/upload">uploade</a> eller sende den til os hurtigst muligt!</p>';
 $slug_data_receipt .= '<p class="regards">Med venlig hilsen,</p>';

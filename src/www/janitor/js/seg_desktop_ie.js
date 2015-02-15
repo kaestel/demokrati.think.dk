@@ -4846,7 +4846,7 @@ u.f.addAction = function(node, _options) {
 		p_ul = u.ae(node, "ul", {"class":"actions"});
 	}
 	var p_li = node.nodeName.toLowerCase() == "li" ? node : u.pn(node, {"include":"li"});
-	if(p_ul != p_li.parentNode) {
+	if(!p_li || p_ul != p_li.parentNode) {
 		p_li = u.ae(p_ul, "li", {"class":action_name});
 	}
 	else {

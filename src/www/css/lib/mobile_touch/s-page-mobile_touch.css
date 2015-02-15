@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6, p, li, dd, dt, span, a {line-height: 1em; font-weight: n
 
 ul {list-style: none;}
 a {text-decoration: underline; cursor: pointer;}
-a:active {color: #009f00;}
+a:active {color: #999999;}
 
 
 img {border: 0; display: block;}

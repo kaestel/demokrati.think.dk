@@ -4464,7 +4464,7 @@ u.f.addAction = function(node, _options) {
 		p_ul = u.ae(node, "ul", {"class":"actions"});
 	}
 	var p_li = node.nodeName.toLowerCase() == "li" ? node : u.pn(node, {"include":"li"});
-	if(p_ul != p_li.parentNode) {
+	if(!p_li || p_ul != p_li.parentNode) {
 		p_li = u.ae(p_ul, "li", {"class":action_name});
 	}
 	else {
@@ -7612,6 +7612,139 @@ Util.videoPlayer = function(_options) {
 	}
 	return player;
 }
+
+/*u-system.js*/
+Util.browser = function(model, version) {
+	var current_version = false;
+	if(model.match(/\bexplorer\b|\bie\b/i)) {
+		if(window.ActiveXObject && navigator.userAgent.match(/(MSIE )(\d+.\d)/i)) {
+			current_version = navigator.userAgent.match(/(MSIE )(\d+.\d)/i)[2];
+		}
+		else if(navigator.userAgent.match(/Trident\/[\d+]\.\d[^$]+rv:(\d+.\d)/i)) {
+			current_version = navigator.userAgent.match(/Trident\/[\d+]\.\d[^$]+rv:(\d+.\d)/i)[1];
+		}
+	}
+	else if(model.match(/\bfirefox\b|\bgecko\b/i)) {
+		if(navigator.userAgent.match(/(Firefox\/)(\d+\.\d+)/i)) {
+			current_version = navigator.userAgent.match(/(Firefox\/)(\d+\.\d+)/i)[2];
+		}
+	}
+	else if(model.match(/\bwebkit\b/i)) {
+		if(document.body.style.webkitTransform != undefined) {
+			current_version = navigator.userAgent.match(/(AppleWebKit\/)(\d+.\d)/i)[2];
+		}
+	}
+	else if(model.match(/\bchrome\b/i)) {
+		if(window.chrome && document.body.style.webkitTransform != undefined) {
+			current_version = navigator.userAgent.match(/(Chrome\/)(\d+)(.\d)/i)[2];
+		}
+	}
+	else if(model.match(/\bsafari\b/i)) {
+		if(!window.chrome && document.body.style.webkitTransform != undefined) {
+			current_version = navigator.userAgent.match(/(Version\/)(\d+)(.\d)/i)[2];
+		}
+	}
+	else if(model.match(/\bopera\b/i)) {
+		if(window.opera) {
+			if(navigator.userAgent.match(/Version\//)) {
+				current_version = navigator.userAgent.match(/(Version\/)(\d+)(.\d)/i)[2];
+			}
+			else {
+				current_version = navigator.userAgent.match(/(Opera[\/ ]{1})(\d+)(.\d)/i)[2];
+			}
+		}
+	}
+	if(current_version) {
+		if(!version) {
+			return current_version;
+		}
+		else {
+			if(!isNaN(version)) {
+				return current_version == version;
+			}
+			else {
+				return eval(current_version + version);
+			}
+		}
+	}
+	else {
+		return false;
+	}
+}
+Util.segment = function(segment) {
+	if(!u.current_segment) {
+		var scripts = document.getElementsByTagName("script");
+		var script, i, src;
+		for(i = 0; script = scripts[i]; i++) {
+			seg_src = script.src.match(/\/seg_([a-z_]+)/);
+			if(seg_src) {
+				u.current_segment = seg_src[1];
+			}
+		}
+	}
+	if(segment) {
+		return segment == u.current_segment;
+	}
+	return u.current_segment;
+}
+Util.system = function(os, version) {
+	var current_version = false;
+	if(os.match(/\bwindows\b/i)) {
+		if(navigator.userAgent.match(/(Windows NT )(\d+.\d)/i)) {
+			current_version = navigator.userAgent.match(/(Windows NT )(\d+.\d)/i)[2];
+		}
+	}
+	else if(os.match(/\bios\b/i)) {
+		if(navigator.userAgent.match(/(OS )(\d+[._]{1}\d)( like Mac OS X)/i)) {
+			current_version = navigator.userAgent.match(/(OS )(\d+[._]{1}\d)( like Mac OS X)/i)[2].replace("_", ".");
+		}
+	}
+	else if(os.match(/\bandroid\b/i)) {
+		if(navigator.userAgent.match(/(Android )(\d+.\d)/i)) {
+			current_version = navigator.userAgent.match(/(Android )(\d+.\d)/i)[2];
+		}
+	}
+	else if(os.match(/\bmac\b/i)) {
+		if(navigator.userAgent.match(/(Macintosh; Intel Mac OS X )(\d+[._]{1}\d)/i)) {
+			current_version = navigator.userAgent.match(/(Macintosh; Intel Mac OS X )(\d+[._]{1}\d)/i)[2].replace("_", ".");
+		}
+	}
+	else if(os.match(/\blinux\b/i)) {
+		if(navigator.userAgent.match(/linux|x11/i)) {
+			current_version = true;
+		}
+	}
+	if(current_version) {
+		if(!version) {
+			return current_version;
+		}
+		else {
+			if(!isNaN(version)) {
+				return current_version == version;
+			}
+			else {
+				return eval(current_version + version);
+			}
+		}
+	}
+	else {
+		return false;
+	}
+}
+Util.support = function(property) {
+	if(document.documentElement) {
+		property = property.replace(/(-\w)/g, function(word){return word.replace(/-/, "").toUpperCase()});
+		return property in document.documentElement.style;
+	}
+	return false;
+}
+Util.windows = function() {
+	return (navigator.userAgent.indexOf("Windows") >= 0) ? true : false;
+}
+Util.osx = function() {
+	return (navigator.userAgent.indexOf("OS X") >= 0) ? true : false;
+}
+
 
 /*u-history.js*/
 Util.History = u.h = new function() {

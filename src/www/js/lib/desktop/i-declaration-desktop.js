@@ -555,5 +555,3 @@ Util.Objects["upload"] = new function() {
 
 	}
 }
-
-u.e.addDOMReadyEvent(u.init);
