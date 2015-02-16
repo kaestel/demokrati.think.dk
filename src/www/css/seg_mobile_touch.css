@@ -151,9 +151,9 @@ body {background: #ffffff;}
 #content .scene.upload form label {display: block; text-align: center; padding: 0 0 5px;}
 #content .scene.upload form div.field {text-align: center; padding: 0 0 25px;}
 #content .scene.upload form div.field.error label {color: #df0000;}
-#content .scene.upload form div.field.files {margin: 20px auto 25px; width: 400px; border: 3px solid #999999; border-radius: 15px; height: 75px; padding: 0;}
+#content .scene.upload form div.field.files {margin: 20px auto 25px; border: 3px solid #999999; border-radius: 15px; height: 75px; padding: 0;}
 #content .scene.upload form div.field.files label {margin-top: -30px;}
-#content .scene.upload form div.field.files input {width: 400px; height: 75px; opacity: 0; position: relative; z-index: 2;}
+#content .scene.upload form div.field.files input {width: 100%; height: 75px; opacity: 0; position: relative; z-index: 2;}
 #content .scene.upload form div.field.files p {position: relative; z-index: 1; margin-top: -45px; font-size: 14px; color: #999999;}
 #content .scene.upload form div.field.files.error {border-color: #df0000;}
 #content .scene.upload form ul.actions {text-align: center;}
