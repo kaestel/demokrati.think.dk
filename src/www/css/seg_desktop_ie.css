@@ -263,4 +263,4 @@ body {background: #e8e8e8;}
 
 /*s-content-desktop_ie.css*/
 body.declaration #content .scene ul.actions li.reset {line-height: 12px;}
-
+body.declaration #content .scene.upload .field.files input {font-size: 130px;}
