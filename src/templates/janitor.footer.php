@@ -2,7 +2,8 @@
 
 	<div id="navigation">
 		<ul>
-			<li class="declaration"><a href="/janitor/declaration/list">Vælgereklæringer</a></li>
+			<li class="declaration"><a href="/janitor/declaration/list">Nye eklæringer</a></li>
+			<li class="approved"><a href="/janitor/approved/list">Godkendte eklæringer</a></li>
 		</ul>
 	</div>
 

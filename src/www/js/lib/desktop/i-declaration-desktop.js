@@ -545,7 +545,7 @@ Util.Objects["upload"] = new function() {
 //				if(!u.qsa(".field.error", this)) {
 					u.ac(this.actions["send"], "wait");
 					this.actions["send"].value = "Vent";
-					this.submit();
+					this.DOMsubmit();
 //				}
 			}
 

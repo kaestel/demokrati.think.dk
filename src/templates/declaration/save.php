@@ -9,6 +9,7 @@ global $slug_email;
 $fs = new FileSystem();
 $fs->makeDirRecursively(PRIVATE_FILE_PATH."/declarations/$slug");
 $fs->makeDirRecursively(PRIVATE_FILE_PATH."/declaration_cache");
+$fs->makeDirRecursively(PRIVATE_FILE_PATH."/declaration_upload/$slug");
 //$fs->makeDirRecursively(PUBLIC_FILE_PATH."/declarations");
 
 

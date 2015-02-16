@@ -13,8 +13,9 @@ $fs = new FileSystem();
 
 
 
-$page->bodyClass("declaration");
+$page->bodyClass("approved");
 $page->pageTitle("Declarations");
+
 
 
 if(is_array($action) && count($action)) {
@@ -24,7 +25,7 @@ if(is_array($action) && count($action)) {
 	if(count($action) == 1 && $action[0] == "list") {
 
 		$page->header(array("type" => "janitor"));
-		$page->template("janitor/declaration/list.php");
+		$page->template("janitor/approved/list.php");
 		$page->footer(array("type" => "janitor"));
 		exit();
 

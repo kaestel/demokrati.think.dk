@@ -5215,7 +5215,7 @@ Util.Objects["upload"] = new function() {
 			this._form.submitted = function() {
 					u.ac(this.actions["send"], "wait");
 					this.actions["send"].value = "Vent";
-					this.submit();
+					this.DOMsubmit();
 			}
 		}
 		scene.ready();

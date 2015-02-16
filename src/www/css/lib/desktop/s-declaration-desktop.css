@@ -151,6 +151,9 @@ body {background: #e8e8e8;}
 #content .scene ul.actions li.reset {background: #999999; color: #ffffff; padding: 10px 20px; font-size: 14px; display: inline-block; cursor: pointer; text-transform: uppercase; font-weight:bold; margin-right: 10px;
 	font-family: 'OpenSans', Arial,sans-serif;
 }
+@media all and (-webkit-min-device-pixel-ratio:0) {
+	#content .scene ul.actions li.reset {line-height: 12px;}
+}
 #content .scene ul.actions li.reset:hover {background: #ffffff; color: #000000; border: 1px solid #000000;}
 
 

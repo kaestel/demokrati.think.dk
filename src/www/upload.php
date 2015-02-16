@@ -29,10 +29,12 @@ if(count($action) == 1 && $action[0] == "send") {
 		print $temp_type."<br>";
 		if(preg_match("/jpeg|png|pdf|gif/", $temp_type)) {
 			
-
 			$temp_extension = mimetypeToExtension($temp_type);
 
-			$declaration_file = PRIVATE_FILE_PATH."/declaration_cache/".time().".".$temp_extension;
+			$fs = new FileSystem();
+			$fs->makeDirRecursively(PRIVATE_FILE_PATH."/declaration_upload/$slug");
+
+			$declaration_file = PRIVATE_FILE_PATH."/declaration_upload/".$slug."/".time().".".$temp_extension;
 
 			copy($temp_file, $declaration_file);
 
@@ -46,7 +48,7 @@ if(count($action) == 1 && $action[0] == "send") {
 				"attachments" => $declaration_file
 			));
 
-			unlink($declaration_file);
+//			unlink($declaration_file);
 			// redirect to clear POST state
 			
 			header("Location: /upload/receipt/$slug");

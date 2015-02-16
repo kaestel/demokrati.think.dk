@@ -693,5 +693,10 @@ body #selection_options ul.actions a.button:hover {background-color: #313942;}
 #content .defaultList.declarationList ul.items > li h3 {padding-bottom: 13px;}
 #content .defaultList.declarationList h2 {padding-top: 20px;}
 #content .defaultList.declarationList div.bundles {padding-bottom: 30px;}
+#content .defaultList.approvedList h1 {border-bottom: 1px solid #dedede; padding-bottom: 74px;}
+#content .defaultList.approvedList ul.items > li h3 {padding-bottom: 13px;}
+#content .defaultList.approvedList h2 {padding-top: 20px;}
+#content .defaultList.approvedList div.bundles {padding-bottom: 30px;}
 body.declaration #navigation .declaration a {padding-left: 35px; color: #ffffff;}
+body.approved #navigation .approved a {padding-left: 35px; color: #ffffff;}
 
