@@ -56,7 +56,7 @@ $output = shell_exec($command." 2>&1");
 
 
 // delete info file after printing
-unlink($info_file);
+//unlink($info_file);
 
 
 
@@ -78,10 +78,10 @@ if(preg_match("/Done/", $output) && file_exists($declaration_file) && filesize($
 
 // delete bad declaration file
 if(file_exists($declaration_file)) {
-	unlink($declaration_file);
+//	unlink($declaration_file);
 }
 
 // return error page
-header("Location: /vaelgererklaering/error");
+//header("Location: /vaelgererklaering/error");
 exit();
 ?>
