@@ -16,7 +16,9 @@
 					<option value="">-</option>
 					<option value="alternativet">Alternativet</option>
 					<option value="dukkepartiet">Dukkepartiet</option>
+					<option value="hampepartiet">Hampepartiet</option>
 					<option value="retsforbundet">Retsforbundet</option>
+
 					<option value="blank">BLANK</option>
 				</select>
 			</div>
