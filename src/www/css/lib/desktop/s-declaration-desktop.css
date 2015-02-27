@@ -148,7 +148,7 @@ body {background: #e8e8e8;}
 #content .scene.signature {padding-bottom: 40px;}
 #content .scene.signature div.signatureform {height: 201px;}
 #content .scene.signature p {padding: 0 0 30px; font-size: 13px; text-align: center;}
-#content .scene ul.actions li.reset {background: #999999; color: #ffffff; padding: 10px 20px; font-size: 14px; display: inline-block; cursor: pointer; text-transform: uppercase; font-weight:bold; margin-right: 10px;
+#content .scene ul.actions li.reset {border: 1px solid #999999; background: #999999; color: #ffffff; padding: 9px 20px; font-size: 14px; display: inline-block; cursor: pointer; text-transform: uppercase; font-weight:bold; margin-right: 10px;
 	font-family: 'OpenSans', Arial,sans-serif;
 }
 @media all and (-webkit-min-device-pixel-ratio:0) {
