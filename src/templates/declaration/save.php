@@ -53,7 +53,7 @@ if(!preg_match("/command not found/i", exec("static_wkhtmltopdf 2>&1"))) {
 $command = "$wkhtmltox_path -s A4 $url $declaration_file";
 // Generate the image
 $output = shell_exec($command." 2>&1");
-
+print $output;
 
 // delete info file after printing
 //unlink($info_file);
