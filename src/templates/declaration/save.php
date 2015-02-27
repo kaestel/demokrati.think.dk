@@ -51,14 +51,14 @@ if(!preg_match("/command not found/i", exec("static_wkhtmltopdf 2>&1"))) {
 
 // Putting together the command for `shell_exec()`
 $command = "$wkhtmltox_path -s A4 $url $declaration_file";
-print $command."<br>";
+// print $command."<br>";
 
 // Generate the image
 $output = shell_exec($command." 2>&1");
-print $output;
+// print $output;
 
 // delete info file after printing
-//unlink($info_file);
+unlink($info_file);
 
 
 
@@ -80,10 +80,10 @@ if(preg_match("/Done/", $output) && file_exists($declaration_file) && filesize($
 
 // delete bad declaration file
 if(file_exists($declaration_file)) {
-//	unlink($declaration_file);
+	unlink($declaration_file);
 }
 
 // return error page
-//header("Location: /vaelgererklaering/error");
+header("Location: /vaelgererklaering/error");
 exit();
 ?>
