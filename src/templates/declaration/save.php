@@ -51,6 +51,8 @@ if(!preg_match("/command not found/i", exec("static_wkhtmltopdf 2>&1"))) {
 
 // Putting together the command for `shell_exec()`
 $command = "$wkhtmltox_path -s A4 $url $declaration_file";
+print $command."<br>";
+
 // Generate the image
 $output = shell_exec($command." 2>&1");
 print $output;
