@@ -8,7 +8,7 @@ global $slug_data_footer;
 global $slug_email;
 
 
-$slug_email = "martin@kaestel.dk";
+$slug_email = "tuxen@hampepartiet.dk";
 
 
 $slug_data_intro = '<h2>Hampepartiet</h2>';

@@ -24,8 +24,8 @@
 			<p>Danmarks bæredygtige parti<br /><a href="http://retsforbundet.dk">Mere om retsforbundet.dk</a></p>
 		</li>
 		<li>
-			<h3><a href="/blank">Blank</a></h3>
-			<p>Danmarks gennemsigtige parti</p>
+			<h3><a href="/blank">[Dit parti her?]</a></h3>
+			<p>Det koster kun DKK 500,-</p>
 		</li>
 	</ul>
 
