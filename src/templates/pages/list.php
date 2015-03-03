@@ -11,13 +11,15 @@
 	<ul class="parties">
 		<li>
 			<h3><a href="https://underskriv.alternativet.dk" target="_blank">Hjælp Alternativet</a></h3>
-			<p>
-				Alternativet er et nyt grønt parti<br /><a href="http://alternativet.dk" target="_blank">Mere om alternativet.dk</a>
-			</p>
+			<p>Alternativet er et nyt grønt parti<br /><a href="http://alternativet.dk" target="_blank">Mere om alternativet.dk</a></p>
 		</li>
 		<li>
 			<h3><a href="https://dukkepartiet.dk/underskriv" target="_blank">Hjælp Dukkepartiet</a></h3>
-			<p>En mistillidserklæring til politikerne<br /><a href="https://dukkepartiet.dk">Mere om dukkepartiet.dk</a>
+			<p>En mistillidserklæring til politikerne<br /><a href="https://dukkepartiet.dk">Mere om dukkepartiet.dk</a></p>
+		</li>
+		<li>
+			<h3><a href="http://nationalpartiet.azurewebsites.net" target="_blank">Hjælp Nationalpartiet</a></h3>
+			<p>For et mangfoldigt Danmark<br /><a href="http://nationalpartiet.dk">Mere om nationalpartiet.dk</a></p>
 		</li>
 		<li>
 			<h3><a href="https://underskriv.retsforbundet.dk" target="_blank">Hjælp Retsforbundet</a></h3>
