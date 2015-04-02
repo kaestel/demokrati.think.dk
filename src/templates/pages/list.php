@@ -10,8 +10,8 @@
 	</p>
 	<ul class="parties">
 		<li>
-			<h3><a href="https://underskriv.alternativet.dk" target="_blank">Hjælp Alternativet</a></h3>
-			<p>Alternativet er et nyt grønt parti<br /><a href="http://alternativet.dk" target="_blank">Mere om alternativet.dk</a></p>
+			<h3>Alternativet</h3>
+			<p>Alternativet har allerede samlet de nødvendige underskrifter!</p>
 		</li>
 		<li>
 			<h3><a href="https://dukkepartiet.dk/underskriv" target="_blank">Hjælp Dukkepartiet</a></h3>
@@ -24,10 +24,6 @@
 		<li>
 			<h3><a href="https://underskriv.retsforbundet.dk" target="_blank">Hjælp Retsforbundet</a></h3>
 			<p>Danmarks bæredygtige parti<br /><a href="http://retsforbundet.dk">Mere om retsforbundet.dk</a></p>
-		</li>
-		<li>
-			<h3><a href="/blank">[Dit parti her?]</a></h3>
-			<p>Det koster kun DKK 500,-</p>
 		</li>
 	</ul>
 

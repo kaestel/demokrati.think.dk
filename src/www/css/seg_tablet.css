@@ -140,7 +140,7 @@ body {background: #e8e8e8;}
 #content .scene.party p {text-align: center; padding: 0 60px;}
 #content .scene.party ul.parties {padding: 20px 0 40px;}
 #content .scene.party ul.parties li {display: inline-block; vertical-align: top; width: 40%; padding: 0 5% 25px;}
-#content .scene.party ul.parties li h3 {text-transform: none; padding-bottom: 4px; font-size: 18px;}
+#content .scene.party ul.parties li h3 {text-transform: none; padding-bottom: 4px; font-size: 18px; font-weight: bold;}
 #content .scene.party ul.parties li h3 a {font-weight: bold;}
 #content .scene.party ul.parties li p {padding: 0; font-size: 14px;}
 #content .scene.party ul.parties li p a {font-size: 13px;}
