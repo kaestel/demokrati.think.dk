@@ -5,6 +5,7 @@
 		Her kan du udfylde en digital vælgererklæring, og derved hjælpe et nyt parti med at 
 		indsamle de 20.600 underskrifter det kræver at opstille til folketingsvalget.
 	</p>
+	<h2>Underskriv</h2>
 	<p>
 		Vælg det parti du ønsker at udfylde en vælgererklæring for:
 	</p>
@@ -18,6 +19,10 @@
 			<p>En mistillidserklæring til politikerne<br /><a href="https://dukkepartiet.dk">Mere om dukkepartiet.dk</a></p>
 		</li>
 		<li>
+			<h3><a href="https://demokrati.think.dk/hampepartiet" target="_blank">Hjælp Hampepartiet</a></h3>
+			<p>Legalisering. Nu.<br /><a href="http://hampepartiet.dk">Mere om hampepartiet.dk</a></p>
+		</li>
+		<li>
 			<h3><a href="http://nationalpartiet.azurewebsites.net" target="_blank">Hjælp Nationalpartiet</a></h3>
 			<p>For et mangfoldigt Danmark<br /><a href="http://nationalpartiet.dk">Mere om nationalpartiet.dk</a></p>
 		</li>
@@ -26,6 +31,8 @@
 			<p>Danmarks bæredygtige parti<br /><a href="http://retsforbundet.dk">Mere om retsforbundet.dk</a></p>
 		</li>
 	</ul>
+
+	<hr />
 
 	<h2>Upload din godkendte vælgererklæring</h2>
 	<p>
@@ -36,6 +43,7 @@
 		<li class="upload"><a href="/upload" class="button">Upload godkendt vælgererklæring</a></li>
 	</ul>
 
+	<hr />
 
 	<h2>Mangler dit parti på listen?</h2>
 	<p>
