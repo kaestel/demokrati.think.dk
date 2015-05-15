@@ -3,7 +3,8 @@
 
 	<p>
 		Her kan du udfylde en digital vælgererklæring, og derved hjælpe et nyt parti med at 
-		indsamle de 20.600 underskrifter det kræver at opstille til folketingsvalget.
+		indsamle de 20.600 underskrifter det kræver at opstille til folketingsvalget.<br />
+		(Du behøver ikke stemme på partiet til valget)
 	</p>
 	<h2>Underskriv</h2>
 	<p>
