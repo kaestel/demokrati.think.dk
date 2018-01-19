@@ -45,9 +45,17 @@ $declaration_file = PRIVATE_FILE_PATH."/declarations/$slug/".$declaration_id.".p
 
 // check wkhtmltox path
 $wkhtmltox_path = false;
+
+// print "static_wkhtmltopdf 2>&1";
+// print exec("static_wkhtmltopdf 2>&1");
+
 if(!preg_match("/command not found/i", exec("static_wkhtmltopdf 2>&1"))) {
 	$wkhtmltox_path = "static_wkhtmltopdf";
 }
+else if(!preg_match("/command not found/i", exec("/usr/local/bin/static_wkhtmltopdf 2>&1"))) {
+	$wkhtmltox_path = "/usr/local/bin/static_wkhtmltopdf";
+}
+// print $wkhtmltox_path;
 
 // Putting together the command for `shell_exec()`
 $command = "$wkhtmltox_path -s A4 $url $declaration_file";
